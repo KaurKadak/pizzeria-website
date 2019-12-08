@@ -1,27 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
 .page{
-  width: 600px;
+  width: 75%;
   margin: 0 auto;
+
+  margin-top: 20px;
 }
 
 h1{
-  text-align: center;
-  margin-bottom: 50px auto;
+    float: left;
 }
 
 .right-side {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
+  width: 260px; /* Set the width of the sidebar */
   padding-top: 20px;
-  background-color: 	#427e14
+  background-color: 	#427e14;
+
+
 }
 
 .left-side{
-  float: left;
   background-color: red;
-  margin-right: auto;
 }
