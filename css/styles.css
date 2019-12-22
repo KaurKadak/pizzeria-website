@@ -12,13 +12,16 @@
     font-style: normal;
 
 }
-body{
 
+img{
+    max-width: 58%;
+   
 }
 
 h1{
     float: left;
     font-family: 'coneria_script_demoregular', sans-serif;
+    padding: 40px 10px;
 }
 
 .clear{
@@ -30,72 +33,74 @@ h1{
   height: 100vh;
   margin: 0 auto;
 
-  background-position: center;
-  background-repeat: no-repeat;
-  border-right: 4px dotted black;
-  border-left: 4px dotted black;
 }
 
 .header{
-
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     margin-top: 40px ;
-    margin-bottom: 3em;
-
 }
 
 .right-side {
   width: 10%;
   padding-top: 20px;
-  background-color: #427e14;
+  background-color: #008c45;
 }
 
 .left-side{
-  background-color: red;
+  background-color: #cd212a;
 }
 
-.next-page-buttons{
-    padding: 40px 40px;
-    width: 50%;
-    margin: 0;
-    box-sizing: border-box;
-    float: left;
+.buttons{
+    /*
+    Container for buttons
 
-
-}
-
-.button {
-    height: 3em;
-    margin-bottom: 3em;
-	background-color:#191919;
-	border-radius:6px;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:"coneria_script_demoregular", sans-serif;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-    text-align: center;
-    min-width: 200px;
-}
-.button:hover {
-	background-color: lightgray;
-}
-.button:active {
-	position:relative;
-	top:1px;
-}
-
-.bg{
-    background-image: url(../images/pizzabgvertical.jpg);
-    background-repeat: no-repeat;
-    background-origin: content-box;
-    height: auto;
-    background-size: 100%;
+    */
+    background-color: #720000;
+    background-position: top 30px;
+    max-width: 650px;
+    margin: 0 auto;
     overflow: hidden;
-    min-height: 100%;
-    display: inline-block;
-
+    background-repeat: no-repeat;
+    
 }
+
+.button{
+    /* Defining general shape of button
+
+    todo: add marigins
+
+    height: 50%;
+    width: 50%;
+    float: left;
+    */
+    height: 300px;
+    width: 50%;
+    float: left;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+
+.centered {
+    /* Centered text */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fafafa;
+  }
+
+.centered p{
+    font-size: large;
+    text-shadow: 1px 1px #333;
+}
+
