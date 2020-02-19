@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Contact</title>
+</head>
+<body>
+    
+    <div class="page">
+        <!-- Back to homepage button -->
+        <div class="back-button"> <a href="homepage.html">Main menu</a></div>
+        <!-- Header -->
+        <div class="header">
+            <div class="right-side"></div>
+            <div class="namename">
+              <h1>Lorenzo's pizzeria</h1>
+            </div>
+            <div class="left-side right-side"></div>
+        </div> 
+        <!-- End of header -->
+
+        <!-- Contact information -->
+        <div class="contact">
+            <h2>Contact us at:</h2>
+            <div class="contact-item">
+                <i class="material-icons">phone </i>
+                <span>+372 55 555 555</span>
+            </div>
+            <div class="contact-item">
+                <i class="material-icons">mail_outline</i>
+                <span>Lorenzos@example.com</span>
+            </div>
+
+            <div class="contact-item">
+                <i class="material-icons">location_on</i>
+            </div>
+
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2544.868417207153!2d-4.147746884058138!3d50.36900800111049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486c934e3e5f31f5%3A0x2dcb21f291ee2770!2sLorenzos!5e0!3m2!1sen!2suk!4v1582064648473!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+
+            
+        <form action="POST", data-netlify="true">
+            <h2 class="top-margin">Leave us feedback:</h2>
+            <div class="fields">
+                <div class="field-input top-margin">
+                    <input type="text", name="name", id="name", placeholder="Name">
+                </div>
+                <div class=" field-input top-margin">
+                        <input type="email" name="email", id="emial", placeholder="Email address">
+                </div>
+                    <div class="field-input">
+                        <textarea class="top-margin textwrapper" name="feedback" id="feedback" placeholder="Feedback" rows="7"></textarea>
+                    </div>
+                <div class="actions"> 
+                    <input type="submit" value="Submit feedback" id="submit">
+                </div>       
+            </div>
+        </form>
+
+        </div>
+    </div>
+</body>
+</html>

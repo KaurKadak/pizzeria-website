@@ -2,9 +2,40 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Book a table</title>
     </head>
     <body>
+        <div class="page">
+            <!-- Back to homepage button -->
+            <div class="back-button"> <a href="homepage.html">Main menu</a></div>
+            <!-- Header -->
+            <div class="header">
+                <div class="right-side"></div>
+                <div class="namename">
+                  <h1>Lorenzo's pizzeria</h1>
+                </div>
+                <div class="left-side right-side"></div>
+            </div> <!-- End of header -->
 
+            <div>
+                <h2> Fill info:</h2>
+                <input type="date" name="" id="">
+                <ul class="time-list">
+                    <li><input type="text" id="timepicker-input" placeholder="00:00" /></li>
+                    <div class="dropdown-times">
+                        <li><button class="time-btn" value="8.00">8.00</button></li>
+                        <li><button class="time-btn" value="8.30">8.30</button></li>
+                        <li><button class="time-btn">9.00</button></li>
+                    </div>
+                </ul>
+                
+                <input type="text" name="Name" id="" placeholder="Enter name">
+                <input type="email" placeholder="Enter email">
+                <input type="submit" class="btn" value="Book a table">
+
+                <script src="scripts/timepicker.js"></script>
+            </div>
+        </div>
     </body>
 </html>

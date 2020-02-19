@@ -13,8 +13,12 @@
 
 }
 
+body{
+  background-color: #f5f3ee;
+}
+
 img{
-    max-width: 58%;
+    max-width: 65%;
 }
 
 h1{
@@ -31,7 +35,6 @@ h1{
   width: 75%;
   height: 100vh;
   margin: 0 auto;
-
 }
 
 .header{
@@ -51,14 +54,17 @@ h1{
   background-color: #cd212a;
 }
 
+.top-margin{
+  margin-top: 15px;
+}
+/* Main menu */
+
 .buttons{
     /* Container for buttons */
-
-    background-color: #720000;
-    max-width: 650px;
-    margin: 0 auto;
-    overflow: hidden;
-    
+  background-color: #720000;
+  max-width: 650px;
+  margin: 0 auto;
+  overflow: hidden; 
 }
 
 .button{
@@ -68,6 +74,12 @@ h1{
     width: 50%;
     float: left;
     position: relative;
+    transform: scale(1);
+}
+
+.button:active{
+  transform: scale(0.95);
+  transition: transform 0.2s;
 }
 
 .centered {
@@ -89,6 +101,7 @@ h1{
 .back-button{
   margin: 0px 20px;
   position: absolute;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* Menu page */
@@ -112,7 +125,7 @@ h1{
   float: none;
   display: flex;
   padding: 10px 0px;
-  background-color: white;
+  background-color:#f5f3ee;
   width: 100%;
   justify-content: center;
 
@@ -137,4 +150,69 @@ h1{
 
 .ingridients{
   padding-top: 10px;
+}
+
+/* About page */
+
+hr{
+  margin: 10px 0;
+}
+
+.about-text p{
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Contacts page*/
+
+.contact{
+  max-width: 750px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+.contact-item, .field-input, textarea{
+  width: 100%;
+}
+
+.contact-map{
+  margin: auto;
+}
+
+.textwrapper
+{
+  border:1px solid #999999;
+  padding:3px;
+}
+
+.actions{
+  padding: 20px 0px;
+}
+
+#submit{
+  width: 10em;
+  height: 2em;
+}
+
+/* Table booking */
+
+.dropdown-times{
+  display: none;
+  background-color: white;
+}
+
+.not-hidden{
+  display: flex;
+}
+
+.time-btn{
+  background-color: transparent;
+  padding: 5px;
+}
+
+.time-list{
+  list-style-type: none;
 }
