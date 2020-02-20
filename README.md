@@ -1,12 +1,10 @@
 Pizzeria mock-up website
 
-Technologies used : HTML, CSS
+* Technologies used : 
+ * HTML, CSS - All the pages were built with custom css, html
+ * Javascript - The timepciker in the tablebooking page is custom built using js
 
-Features still to be added :
-* Front-end:
-  * Finish about page,
-  * Finish contact page,
-  * Finish table booking page
 
-* Back-end:
-  * Table booking through javascript (lets user book a table and stores the booking in a database)  
+
+
+
