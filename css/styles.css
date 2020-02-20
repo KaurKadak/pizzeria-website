@@ -199,20 +199,62 @@ hr{
 
 /* Table booking */
 
+.booking-container{
+  width:  400px;
+  margin: auto;
+}
+
+.booking-items{
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  
+}
+
+.booking-items h2, .full{
+  width: 100%;
+}
+
 .dropdown-times{
   display: none;
+  max-width: 250px;
   background-color: white;
+  border: 1px solid black;
+}
+
+.dropdown-times p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
 }
 
 .not-hidden{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; 
 }
 
 .time-btn{
   background-color: transparent;
-  padding: 5px;
+  padding: 4px;
+  margin: 4px;
 }
 
 .time-list{
   list-style-type: none;
+}
+
+.a{
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.booking-input, .booking-items h2{
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+  padding: 3px;
 }

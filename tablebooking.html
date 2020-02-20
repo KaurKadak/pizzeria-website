@@ -18,21 +18,69 @@
                 <div class="left-side right-side"></div>
             </div> <!-- End of header -->
 
-            <div>
-                <h2> Fill info:</h2>
-                <input type="date" name="" id="">
-                <ul class="time-list">
-                    <li><input type="text" id="timepicker-input" placeholder="00:00" /></li>
-                    <div class="dropdown-times">
-                        <li><button class="time-btn" value="8.00">8.00</button></li>
-                        <li><button class="time-btn" value="8.30">8.30</button></li>
-                        <li><button class="time-btn">9.00</button></li>
-                    </div>
-                </ul>
-                
-                <input type="text" name="Name" id="" placeholder="Enter name">
-                <input type="email" placeholder="Enter email">
-                <input type="submit" class="btn" value="Book a table">
+            <div class="booking-container"> 
+                <div class="booking-items">
+                    <h2> Book a table:</h2>
+
+                    <form action="POST" data-netlify="true">
+
+                        <div class="full booking-input">
+                            <label for="date">Date:</label>
+                            <input  type="date" name="date" id="date" min="" required>
+                        </div>
+                        
+                        <div class="booking-input">
+                            <label for="time">Time:</label>
+                            <ul class="time-list">
+                                
+                                <li><input type="text" name= "time" id="timepicker-input" placeholder="08.00" value="08.00"  required/></li>
+                                
+                                <div class="dropdown-times">
+                                    <p> Choose a time:</p>
+                                    <li class="a"><button type="button" class="time-btn" value="08.00">08.00</button></li>
+                                    <li class="a"><button type="button" class="time-btn" value="08.30">08.30</button></li>
+                                    <li class="a"><button type="button" class="time-btn" value="09.00">09.00</button></li>
+                                    <li class="a"><button type="button" class="time-btn" value="09.30">09.30</button></li>
+                                    <li class="a"><button type="button" class="time-btn" value="10.00">10.00</button></li>
+                                    <li class="a"><button type="button" class="time-btn" value="10.30">10.30</button></li>
+                                    <li class="a"><button type="button" class="time-btn" value="11.00">11.00</button></li>
+                                    <li class="a"><button type="button" class="time-btn" value="11.30">11.30</button></li>
+                                    <li class="a"><button type="button" class="time-btn" value="12.00">12.00</button></li>
+                                    <li class="a"><button type="button" class="time-btn" value="12.30">12.30</button></li>
+                                    <li class="a"><button type="button" class="time-btn" value="13.00">13.00</button></li>
+                                    <li class="a"><button type="button" class="time-btn" value="13.30">13.30</button></li>
+                                    <li class="a"><button type="button" class="time-btn" value="14.00">14.00</button></li>
+                                    <li class="a"><button type="button" class="time-btn" value="14.30">14.30</button></li>
+                                    <li class="a"><button type="button" class="time-btn" value="15.00">15.00</button></li>
+                                    <li class="a"><button type="button" class="time-btn" value="15.30">15.30</button></li>
+                                    <li class="a"><button type="button" class="time-btn" value="16.00">16.00</button></li>
+                                    <li class="a"><button type="button" class="time-btn" value="16.30">16.30</button></li>
+                                    <li class="a"><button type="button" class="time-btn" value="17.00">17.00</button></li>
+                                </div>
+                            </ul>
+                        </div>
+                    
+                    
+                        <div class="booking-input">
+                            <label for="Name">Name:</label>
+                            <input type="text" name="Name" id="" placeholder="Enter name" required>
+                        </div>
+                        <div class="booking-input">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" placeholder="Enter email" required>
+                        </div>
+                        <div class="booking-input">
+                            <label for="people-amount">Booking for how many people:</label>
+                            <input type="number" name="people-amount" placeholder="" min="1" max="10" required> 
+                        </div>
+                        <div class="booking-input">
+                            <input type="submit" class="btn" id="submit" value="Book a table">
+                        </div>
+
+                    </form>
+
+                    
+                </div>
 
                 <script src="scripts/timepicker.js"></script>
             </div>

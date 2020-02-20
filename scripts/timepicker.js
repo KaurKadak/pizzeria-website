@@ -9,6 +9,8 @@ timepicker.addEventListener("click", function(){
 for (let i = 0; i < times.length; i++){
     times[i].addEventListener("click", function(){
         var timeOfBooking = this.value
-        console.log(timeOfBooking)
+        timepicker.value = timeOfBooking
+        timepicker.innerHTML = timeOfBooking
+        dropdownTimes.classList.toggle("not-hidden")
     })
 }
